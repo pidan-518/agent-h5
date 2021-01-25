@@ -1,0 +1,197 @@
+@import '../../common/globalstyle.less';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  position: relative;
+
+  #baseSetting {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+
+    #header {
+      width: 100%;
+      height: 131px;
+      overflow: hidden;
+
+      .titlebar {
+        width: 100%;
+        height: 131px;
+      }
+    }
+
+    #content {
+      width: 100%;
+      height: auto;
+      font-size: 24px;
+      overflow: hidden;
+
+      // 级别设置-设置列表
+      .setting-group {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding-bottom: 20px;
+
+        .setting-title {
+          font-size: 28px;
+          color: #4f4f4f;
+          line-height: 86px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          margin-left: 46px;
+        }
+
+        .group {
+          width: 100%;
+
+          .item {
+            width: 653px;
+            height: 43px;
+            margin: 15px auto 0;
+            display: flex;
+            justify-content: space-between;
+
+            .item-name {
+              font-size: 24px;
+              color: #4f4f4f;
+            }
+
+            .item-btn {
+              width: 155px;
+              height: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              // 删除按钮
+              .del-btn {
+                // 关闭操作按钮
+                display: none;
+
+                width: 43px;
+                height: 43px;
+                padding: 0;
+                background-image: url('../../static/common/delete.png');
+                background-size: 43px 43px;
+                border: none;
+                // 覆盖全局样式
+                margin: 0;
+              }
+
+              // 修改按钮
+              .com-btn-hide {
+                // 关闭操作按钮
+                display: none;
+
+                width: 40px;
+                height: 40px;
+                background-image: url('../../static/common/comment.png');
+                padding: 0;
+                background-size: 36px 36px;
+                border: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // 覆盖全局样式
+                margin: 0;
+              }
+
+              // 修改按钮
+              .com-btn {
+                width: 40px;
+                height: 40px;
+                background-image: url('../../static/common/comment.png');
+                padding: 0;
+                background-size: 34px;
+                border: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // 覆盖全局样式
+                margin: 0;
+              }
+
+              // 查阅按钮
+              .watch-btn {
+                width: 43px;
+                height: 43px;
+                background-image: url('../../static/common/watch.png');
+                padding: 0;
+                background-size: 36px 36px;
+                border: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // 覆盖全局样式
+                margin: 0;
+              }
+            }
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      .setting-group2 {
+        padding-top: 0;
+        margin-top: 4px;
+      }
+
+    // 添加
+    .add {
+      width: 100%;
+      height: 234px;
+      background-color: #fff;
+      margin-top: 4px;
+
+      .add-title {
+        font-size: 30px;
+        color: #4F4F4F;
+        font-weight: 400;
+        line-height: 94px;
+        margin-left: 44px;
+        display: block;
+      }
+
+      .add-items {
+        width: 100%;
+        height: 144px;
+        display: flex;
+
+        .btn-area {
+          // width: 96px;
+          height: 100%;
+          margin-left: 50px;
+
+          .btn {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 4px;
+            padding: 0;
+            border: none;
+
+            .btn-icon {
+              width: 80px;
+              height: 80px;
+              display: block;
+            }
+          }
+
+          .btn-name {
+            font-size: 24px;
+            color: #4F4F4F;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    }
+  }
+}

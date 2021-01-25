@@ -1,0 +1,65 @@
+// @import'../../common/global.less';
+
+.h5-marketing {
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  // background: #F2F2F2;
+    .marketing-topbanner {
+      .marketing-topbanner-list {
+        width: 100%;
+        // height: 379.08px;
+        img.topbanner-list-bgimg {
+            width: 100%;
+            height: calc((100vh - 299px) / 2);
+            position: relative;
+        }
+  
+        img.topbanner-list-logoimg {
+            width: 338px;
+            height: 227px;
+            z-index: 1;
+            position: absolute;
+            top: 42px;
+            left: 231px;
+            right: 131px;
+            bottom: 110px;
+        }
+      }
+    }
+  
+    .marketing-functionbar {
+      .marketing-functionbar-list {
+        // background-color: #fff;
+        width: 100%;
+        height: 299px;
+        display: flex;
+        .functionbar-list-item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            // justify-content: center;
+          img.item-icon {
+            width: 199px;
+            height: 199px;
+          }
+  
+          text.item-content {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  
+    .marketing-bottom {
+      .marketing-bottom-list {
+        width: 100%;
+            img.bottom-list-bgimg {
+            width: 100%;
+            height: calc((100vh - 299px) / 2);
+            transform: rotate(180deg);
+        }
+      }
+    }
+  }

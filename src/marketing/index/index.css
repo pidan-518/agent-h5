@@ -1,0 +1,49 @@
+.h5-marketing {
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+.h5-marketing .marketing-topbanner .marketing-topbanner-list {
+  width: 100%;
+}
+.h5-marketing .marketing-topbanner .marketing-topbanner-list img.topbanner-list-bgimg {
+  width: 100%;
+  height: calc((100vh - 299px) / 2);
+  position: relative;
+}
+.h5-marketing .marketing-topbanner .marketing-topbanner-list img.topbanner-list-logoimg {
+  width: 338px;
+  height: 227px;
+  z-index: 1;
+  position: absolute;
+  top: 42px;
+  left: 231px;
+  right: 131px;
+  bottom: 110px;
+}
+.h5-marketing .marketing-functionbar .marketing-functionbar-list {
+  width: 100%;
+  height: 299px;
+  display: flex;
+}
+.h5-marketing .marketing-functionbar .marketing-functionbar-list .functionbar-list-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.h5-marketing .marketing-functionbar .marketing-functionbar-list .functionbar-list-item img.item-icon {
+  width: 199px;
+  height: 199px;
+}
+.h5-marketing .marketing-functionbar .marketing-functionbar-list .functionbar-list-item text.item-content {
+  font-size: 28px;
+}
+.h5-marketing .marketing-bottom .marketing-bottom-list {
+  width: 100%;
+}
+.h5-marketing .marketing-bottom .marketing-bottom-list img.bottom-list-bgimg {
+  width: 100%;
+  height: calc((100vh - 299px) / 2);
+  transform: rotate(180deg);
+}

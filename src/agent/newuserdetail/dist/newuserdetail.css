@@ -1,0 +1,66 @@
+.h5-newuser {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+.h5-newuser .newuser-top {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #f3f3f3;
+  box-sizing: border-box;
+}
+.h5-newuser .newuser-top .title {
+  flex: 1;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+.h5-newuser .newuser-content .contentList {
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #f3f3f3;
+  box-sizing: border-box;
+}
+.h5-newuser .newuser-content .contentList .time {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+}
+.h5-newuser .newuser-content .contentList .money {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+}
+.h5-newuser .newuser-content .contentList .btn {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  line-height: 47px;
+  opacity: 1;
+  color: #ffffff;
+  font-size: 24px;
+}
+.h5-newuser .newuser-content .contentList .btn .text {
+  display: block;
+  background: #E32D2D;
+  min-width: 146px;
+  max-width: 146px;
+  border-radius: 8px;
+  width: 146px;
+}
+.h5-newuser .newuser-content .no-more {
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  padding-top: 15px;
+  color: #999;
+  font-size: 24px;
+  background: #fff;
+}

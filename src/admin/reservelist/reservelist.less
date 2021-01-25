@@ -1,0 +1,73 @@
+@import "../../common/global.less";
+
+#reserve-list {
+  font-size: 24px;
+
+  .asegmented-control {
+    display: flex;
+    background-color: #fff;
+
+    .control-item {
+      flex: 1;
+      text-align: center;
+      line-height: 90px;
+      color: #030303;
+    }
+
+    .control-item-ac {
+      &:extend(#reserve-list .asegmented-control .control-item);
+      background-color: #454545;
+      color: #fff;
+    }
+  }
+
+  .list {
+    margin-top: 2px;
+
+    .list-item {
+      padding: 22px 42px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      margin-bottom: 2px;
+
+      .user-head {
+
+        img {
+          .setSize(122px, 122px);
+          border-radius: 8px;
+        }
+
+        .user-tag {
+          background-color: #D6A886;
+          font-size: 24px;
+          padding: 8px 12px;
+          color: #6F411C;
+          border-radius: 8px;
+        }
+      }
+
+      .item-content {
+
+        .content-line {
+          margin-bottom: 7px;
+        }
+      }
+
+      .detail-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .detail-text {
+          .setSize(92px, 92px);
+          padding: 16px 21px;
+          background-color: #C71E1E;
+          color: #fff;
+          line-height: 1.2;
+          border-radius: 45px;
+        }
+      }
+    }
+  }
+}

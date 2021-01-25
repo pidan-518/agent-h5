@@ -1,0 +1,125 @@
+@import '../../common/globalstyle.less';
+
+.detainfo {
+  background-color: #ffffff;
+
+  .upper {
+    padding: 24px 30px 29px 64px;
+    // box-sizing: border-box;
+    height: auto;
+    border-bottom: 20px solid #f2f2f2;
+    position: relative;
+
+    .headPor {
+      text-align: center;
+
+      // flex-direction: column;
+      .set {
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        right: 36px;
+        top: 36px;
+      }
+
+      .image {
+        width: 134px;
+        height: 134px;
+        border-radius: 6px;
+      }
+
+      .shopowner {
+        display: block;
+        width: 134px;
+        background: #D6A886;
+        color: #6F411C;
+        font-size: 24px;
+        line-height: 42px;
+        margin: 0 auto;
+        border-radius: 4px;
+      }
+    }
+
+    .massage {
+      display: flex;
+      margin-top: 14px;
+
+      .upperLeft {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        font-size: 23px;
+        color: #4F4F4F;
+        font-family: 'Microsoft YaHei';
+
+      }
+
+      .upperRight {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 23px;
+        color: #4F4F4F;
+        font-family: 'Microsoft YaHei';
+      }
+    }
+  }
+
+  .lower {
+    .lowerHead {
+      display: flex;
+      justify-content: space-around;
+      font-size: 27px;
+      color: #4F4F4F;
+      padding: 30px 0 33px;
+      border-bottom: 4px solid #f2f2f2;
+    }
+
+    .conItem {
+      padding: 22px 44px 30px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1px;
+      margin: 8px 18px 8px 18px;
+
+      // background-color: #d11f1f;
+      .itemLeft {
+        display: flex;
+
+        .avatar {
+          margin-right: 46px;
+
+          img {
+            width: 134px;
+            height: 134px;
+            border-radius: 6px;
+          }
+
+          p {
+            background: #D6A886;
+            width: 134px;
+            color: #6F411C;
+            font-size: 24px;
+            text-align: center;
+            line-height: 42px;
+            border-radius: 4px;
+            font-family: Microsoft YaHei;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          p {
+            color: #4F4F4F;
+            font-size: 24px;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,349 @@
+@import '../../common/globalstyle.less';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  position: relative;
+
+  #agentManage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+
+    #content {
+      width: 100%;
+      height: auto;
+      font-size: 24px;
+      overflow: hidden;
+
+      .topMask {
+        width: 750px;
+        height: 100%;
+        position: fixed;
+        background-color: #444343;
+        opacity: 0.5;
+        z-index: 99;
+        overflow: hidden;
+      }
+
+      .topControl,
+      .topHide {
+        width: 100%;
+        height: 198px;
+        background-color: #474747;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: transform ease 500ms;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+
+        // 选项组
+        .options {
+          width: 590px;
+          height: 148px;
+          margin: 0px auto;
+          padding-top: 32px;
+          display: flex;
+          justify-content: space-between;
+
+          .button-item {
+            font-size: 24px;
+            color: #fff;
+            display: inline-block;
+
+            .button-box {
+              width: 86px;
+              height: 86px;
+              margin: 0px auto 0;
+              border-radius: 50%;
+              border: none;
+              padding: 0;
+
+              .button-img {
+                width: 86px;
+                height: 86px;
+              }
+            }
+          }
+        }
+
+        // 弹出按钮
+        .popBtnView {
+          width: 100%;
+          height: 50px;
+          padding-top: 8px;
+          text-align: center;
+          position: relative;
+
+          .tip {
+            display: block;
+            width: 100%;
+            height: 26px;
+            line-height: 26px;
+            color: #fff;
+            font-size: 20px;
+            transform: scale(0.9);
+            position: absolute;
+            top: 0;
+          }
+
+          .popBtn-open {
+            width: 16px;
+            height: 10px;
+            transform: rotate(0deg);
+            transition: transform 500ms ease;
+          }
+
+          .popBtn-close {
+            width: 16px;
+            height: 10px;
+            transform: rotate(180deg);
+            transition: transform 500ms ease;
+          }
+        }
+      }
+
+      .topHide {
+        transform: translateY(-148px);
+      }
+
+      .nonetransition {
+        transition: none !important;
+      }
+
+      // 级别设置-设置列表
+      .setting-group {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 20px;
+
+        .setting-title {
+          font-size: 28px;
+          color: #4f4f4f;
+          line-height: 86px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          margin-left: 46px;
+        }
+
+        .group {
+          width: 100%;
+
+          .item {
+            width: 653px;
+            height: 43px;
+            margin: 15px auto 0;
+            display: flex;
+            justify-content: space-between;
+
+            .item-name {
+              font-size: 24px;
+              color: #4f4f4f;
+            }
+
+            .item-btn {
+              width: 155px;
+              height: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              // 删除按钮
+              .del-btn {
+                // 关闭操作按钮
+                display: none;
+
+                width: 43px;
+                height: 43px;
+                padding: 0;
+                background-image: url('../../static/common/delete.png');
+                background-size: 43px 43px;
+                border: none;
+                // 覆盖全局样式
+                margin: 0;
+              }
+
+              // 修改按钮
+              .com-btn-hide {
+                // 关闭操作按钮
+                display: none;
+
+                width: 40px;
+                height: 40px;
+                background-image: url('../../static/common/comment.png');
+                padding: 0;
+                background-size: 36px 36px;
+                border: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // 覆盖全局样式
+                margin: 0;
+              }
+
+              // 修改按钮
+              .com-btn {
+                width: 40px;
+                height: 40px;
+                background-image: url('../../static/common/comment.png');
+                padding: 0;
+                background-size: 34px;
+                border: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // 覆盖全局样式
+                margin: 0;
+              }
+
+              // 查阅按钮
+              .watch-btn {
+                width: 43px;
+                height: 43px;
+                background-image: url('../../static/common/watch.png');
+                padding: 0;
+                background-size: 36px 36px;
+                border: none;
+                background-position: center center;
+                background-repeat: no-repeat;
+                // 覆盖全局样式
+                margin: 0;
+              }
+            }
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      .setting-group2 {
+        padding-top: 0;
+        margin-top: 4px;
+      }
+
+      // 添加
+      .add {
+        width: 100%;
+        height: 234px;
+        background-color: #fff;
+        margin-top: 4px;
+
+        .add-title {
+          font-size: 30px;
+          color: #4F4F4F;
+          font-weight: 400;
+          line-height: 94px;
+          margin-left: 44px;
+          display: block;
+        }
+
+        .add-items {
+          width: 100%;
+          height: 144px;
+          display: flex;
+
+          .btn-area {
+            // width: 96px;
+            height: 100%;
+            margin-left: 50px;
+
+            .btn {
+              width: 80px;
+              height: 80px;
+              margin: 0 auto 4px;
+              padding: 0;
+              border: none;
+
+              .btn-icon {
+                width: 80px;
+                height: 80px;
+                display: block;
+              }
+            }
+
+            .btn-name {
+              font-size: 24px;
+              color: #4F4F4F;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      // 重写taro UI提供的模态框样式
+      // .at-modal__container {
+      //   width: 560.1px;
+      //   border-radius: 0;
+
+      //   .at-modal__content {
+      //     height: 278px;
+      //     // 必须覆盖原来的样式
+      //     min-height: 278px;
+      //     font-size: 27px;
+      //     // 优化
+      //     box-sizing: border-box;
+      //     padding: 70px 94px 0 72px;
+
+      //     // 级别删除模态框
+      //     .modal-text {
+      //       height: 278px;
+      //       color: #030303;
+      //     }
+
+      //     // 级别修改模态框
+      //     .modal-box {
+      //       font-size: 27px;
+      //       width: 100%;
+      //       height: auto;
+      //       color: #030303;
+      //       margin-top: 29px;
+
+      //       span {
+      //         float: left;
+      //         margin-top: 20px;
+      //       }
+
+      //       .level-input {
+      //         width: 227.27px;
+      //         float: left;
+      //         border: none;
+      //         margin-top: 20px;
+      //         font-size: 40px;
+      //         font-weight: bold;
+      //         line-height: 74px;
+      //         // 下划线
+      //         border-bottom: 1px solid #a2a2a2;
+      //         text-align: center;
+      //       }
+      //     }
+      //   }
+
+      //   .at-modal__footer {
+      //     height: 104px;
+
+      //     .at-modal__action {
+      //       height: 104px;
+
+      //       button {
+      //         width: 50%;
+      //         min-width: 50%;
+      //         height: 100%;
+      //         font-size: 33px;
+      //         line-height: 104px;
+      //         color: #030303;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}

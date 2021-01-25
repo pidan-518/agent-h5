@@ -1,0 +1,124 @@
+@import '../../common/globalstyle.less';
+.marketing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .photoLeft{
+        margin-top: 10px;      
+        // border: 1px solid red;
+        width: 339px;
+        background: #ffffff;
+        .leftImage{
+            width: 339px;
+            height: 352px;
+            text-align: center;
+            // background: rgba(0, 0, 255, 0.418);
+            margin-bottom: 10px;
+            .icon-img{
+                max-width:339px;
+                max-height: 352px;;
+            }
+        }
+        .leftTitle{
+            text-align:center;
+            font-size: 28px;
+            // color:red;
+            margin-bottom: 10px;
+        }
+        .leftButton{
+            display: flex;
+                justify-content: space-around;
+            .boxButton{
+                position: relative;  
+                .upfile{
+                    opacity: 0;
+                    position: absolute;
+                    width:146px;
+                    height: 55px;
+                }
+                .leftUpload{
+                    width:146px;
+                    height: 55px;
+                    border-radius: 8px;
+                    background-color:#E32D2D ;
+                    color: #ffffff;
+                    text-align:center;
+                    line-height: 55px;
+                    font-size: 24px;
+                }              
+            }
+            .leftPreview{
+                width:146px;
+                height: 55px;
+                border-radius: 8px;
+                background-color:#E32D2D ;
+                color: #ffffff;
+                text-align:center;
+                line-height: 55px;
+                font-size: 24px;
+            }
+        }
+    }
+    .photoRight{
+        margin-top: 10px;
+        // border: 1px solid red;
+        width: 339px;
+        background: #ffffff;
+        .rightImage{
+            width: 339px;
+            height: 352px;
+            overflow: hidden;
+            text-align: center;
+            // background: rgba(0, 0, 255, 0.418);
+            margin-bottom: 10px;
+            .icon-img{
+                max-width:339px;
+                max-height: 352px;;
+            }
+           
+        }
+        .rightTitle{
+            text-align:center;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .rightButton{
+            display: flex;
+                justify-content: space-around;
+            .boxButton{
+                position: relative;  
+                .upfile{
+                    opacity: 0;
+                    position: absolute;
+                    width:146px;
+                    height: 55px;
+                }
+                .rightUpload{
+                    width:146px;
+                    height: 55px;
+                    border-radius: 8px;
+                    background-color:#E32D2D ;
+                    color: #ffffff;
+                    text-align:center;
+                    line-height: 55px;
+                    font-size: 24px;
+                }              
+            }
+            .rightPreview{
+                width:146px;
+                height: 55px;
+                border-radius: 8px;
+                background-color:#E32D2D ;
+                color: #ffffff;
+                text-align:center;
+                line-height: 55px;
+                font-size: 24px;
+            }
+        }
+    }
+    .preview{
+        position: fixed;
+        width: 90%;
+        height: 90%;
+    }
+}

@@ -1,0 +1,47 @@
+.calendar{
+  padding-top: 40px;
+  padding-bottom: 165px;
+  .time{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-top: 50px;
+    .item{
+      font-size: 28px;
+      border: 1px solid #999;
+      text-align: center;
+      border-radius: 6px;
+      &.on{
+        color:#3195E1 ;
+        border:1px solid #3195E1;
+      }
+    }
+  }
+  .time-no{
+    font-size: 28px;
+    color: #999;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .bg{
+    width: 100vw;
+    background: #fff;
+    height: 158px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  .submit{
+    background: #D6A886;
+    color: #6F411C;
+    width: 578px;
+    height: 72px;
+    line-height: 72px;
+    border-radius: 84px;
+    font-size: 28px;
+    text-align: center;
+    margin: 10px auto;
+  }
+}

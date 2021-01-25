@@ -1,0 +1,67 @@
+@import '../../common/global.less';
+
+#lecturer-admin {
+  .setGrid(2, auto-fill, 340px, 434px);
+  padding: 14px 28px;
+
+  .lecturer-item {
+    .setSize(340px, 434px);
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+  
+    .item-img {
+      .setSize(100%, 100%);
+      border-radius: 8px;
+    }
+  
+    .lecturer-info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      height: 211px;
+      padding: 0px 14px;
+      border-radius: 0px 0px 8px 8px;
+  
+      .left-box {
+  
+        .lecturer-name {
+          font-size: 36px;
+          font-weight: 700;
+          color: #4F4F4F;
+          .setFonthidden(1);
+        }
+  
+        .lecturer-details {
+          font-size: 23px;
+          color: #4F4F4F;
+          line-height: 1.3;
+          height: 60px;
+          .setFonthidden(2);
+        }
+      }
+  
+      .btn-box {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 60px;
+  
+        .item-btn {
+          .setSize(76px, 76px);
+          background-color: #666666;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          img {
+            .setSize(43px, 43px);
+          }
+        }
+      }
+    }
+  }
+}

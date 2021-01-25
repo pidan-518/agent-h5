@@ -1,0 +1,108 @@
+@import '../../common/globalstyle.less';
+
+// .taro_page{
+//     background-color: #FFFFFF
+// }
+
+.downSet{
+    height: 1334px;
+    background-color: #ffffff;
+    // position: relative;
+    .taro-text{
+        word-break: break-all;
+        // padding: 20px;
+    }
+    .set{
+        padding: 24px 37px 46px 24px ;
+        height: 100%;
+        li{
+            padding-top: 24px  52px 24px 46px;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+        //    word-wrap: break-word;
+           word-break: break-all;
+           p{
+              font-size: 25px; 
+              width: 315px;
+              font-family: 'Microsoft YaHei';
+              color: #4F4F4F;
+           }
+           .itemRight{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                display: inline-block;
+                margin: 0 20px;
+                &:nth-of-type(1) {
+                    margin-right: 76px;
+                    img{
+                        width: 43px;
+                        color: #4F4F4F;
+                    }
+               }
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+           }
+        }
+       
+    }
+    .delet{
+        .at-modal__content{
+            min-height: 120px;
+            color: #4F4F4F;
+        }   
+        .at-modal__footer .at-modal__action > button:last-child {
+            color: #4F4F4F;
+        }
+    }
+    .modify{
+        .at-modal__container{
+            .at-modal__header{
+                // display: inline;
+                display: block ;
+                padding: 0 ;
+                padding-top: 30px ;
+                font-size: 28px ;
+            }
+            .taro-scroll{
+                min-height: 100px;
+                padding-top: 20px;
+            }
+           
+            ::after{
+                display: none
+            }
+            // .at-modal__header{
+            //     display: inline-block;
+            //     font-size: 25px;
+            //     padding-top: 48px;
+            //     padding-left: 56px;
+            // }
+            .at-input__container{
+                font-weight: bold;
+                .taro-scroll{
+                    padding: 0;
+                }
+            }
+        }
+        .at-modal__footer .at-modal__action > button:last-child {
+            color: #4F4F4F;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid #d4d4d4;
+            padding-bottom: 5px;
+            margin: 0 auto ;
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .at-modal__content{
+            height: 100px;
+        }
+    }  
+}

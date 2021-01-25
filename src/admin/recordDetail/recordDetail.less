@@ -1,0 +1,65 @@
+@import '../../common/globalstyle.less';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#recordDetail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+
+  #content {
+    width: 100%;
+    height: 1334px;
+    font-size: 24px;
+    background-color: #fff;
+    display: inline-block;
+
+    // 头像及头衔
+    .avatars {
+      width: 150px;
+      height: auto;
+      font-size: 24px;
+      margin: 46px auto;
+
+      .avatar {
+        width: 145px;
+        height: 144px;
+        margin: 22px auto 0;
+        // background-color: #3195e1;
+      }
+
+      .rank {
+        width: 146px;
+        height: 42px;
+        background-color: #D6A886;
+        color: #6F411C;
+        text-align: center;
+        margin: 12px auto;
+        border-radius: 4px;
+      }
+    }
+
+    // 信息列表
+    .Information-list {
+      width: 100%;
+      height: auto;
+      font-size: 24px;
+      font-weight: 400;
+      margin-left: 108px;
+
+      p {
+        line-height: 31px;
+        margin-top: 13px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

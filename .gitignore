@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+/dist
+/.idea
+/dist.zip
+/.history
+/.temp
+debug.log

@@ -1,0 +1,139 @@
+.reserve{
+  min-height: 100vh;
+  background: #F5F5F5;
+  padding-top: 60px;
+  .tab-list{
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    .item{
+      width: 88px;
+      height: 88px;
+      background: #D6D6D6;
+      font-size: 22px;
+      opacity: 1;
+      border-radius: 50%;
+      color: #4F4F4F;
+      text-align: center;
+      margin: 0 62px;
+      &:last-of-type{
+        .text{
+          display: block;
+          width: 50px;
+          margin: auto;
+          margin-top: 15%;
+          line-height: 30px;
+        }
+      }
+      .text{
+        line-height: 88px;
+      }
+      &.on{
+        background: linear-gradient(180deg, #FDE9C6 0%, #E4A967 100%);
+        color: #6F411C;
+      }
+    }
+  }
+  .masking{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(71, 71, 71, .15);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+  }
+  .dialog{
+    width: 100vw;
+    background: #474747;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all .6s;
+    &.remove{
+      transform: translateY(-350px);
+    }
+    &.on{
+      transform: translateY(0);
+      transition: all .6s;
+    }
+    .more{
+      width: 18px;
+      height: 16px;
+      &.remote{
+        display: block;
+        margin: 10px auto;
+        transform: rotate(180deg);
+      }
+    }
+    .tips{
+      height: 58px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      .text{
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+      
+    }
+  }
+  .item-view{
+    display: flex;
+    align-items: center;
+    width:710px;
+    height:210px;
+    background:rgba(255,255,255,1);
+    opacity:1;
+    border-radius:4px;
+    margin: 16px auto;
+    border-radius: 10px;
+    padding: 16px 42px;
+    box-sizing: border-box;
+    .left{
+      .head{
+        width:122px;
+        height:147px;
+        border-radius:4px;
+        padding-top: 16px;
+        img{
+          // object-fit: contain;
+        }
+      }
+      .tag{
+        width:122px;
+        height:43px;
+        line-height:43px;
+        background: #D6A886;
+        opacity:1;
+        border-radius:4px;
+        font-size: 24px;
+        color: #6F411C;
+        text-align: center;
+      }
+    }
+    .center{
+      color: #0E0E0E;
+      font-size: 24px;
+      margin: 0 32px 0 48px;
+    }
+    .more{
+      width: 26px;
+      height: 26px;
+      transform: rotate(-90deg);
+    }
+  }
+  .no-more{
+    text-align: center;
+    padding: 20px ;
+    color: #666;
+    font-size: 24px;
+  }
+}

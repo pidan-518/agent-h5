@@ -1,0 +1,51 @@
+.h5-pastDetails {
+  background-color: #ffff;
+  margin: 35px;
+}
+.h5-pastDetails .applyContent {
+  margin-bottom: 90px;
+}
+.h5-pastDetails .applyContent .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0E0E0E;
+}
+.h5-pastDetails .applyContent .content {
+  display: flex;
+}
+.h5-pastDetails .applyContent .content .contentLeft {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: justify;
+}
+.h5-pastDetails .applyContent .content .symbol {
+  font-size: 24px;
+  font-weight: 400;
+}
+.h5-pastDetails .applyContent .content .contentRight {
+  font-size: 24px;
+  font-weight: 400;
+}
+.h5-pastDetails .applicant .userTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0E0E0E;
+}
+.h5-pastDetails .applicant .content {
+  display: flex;
+}
+.h5-pastDetails .applicant .content .contentLeft {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: justify;
+}
+.h5-pastDetails .applicant .content .symbol {
+  font-size: 24px;
+  font-weight: 400;
+}
+.h5-pastDetails .applicant .content .contentRight {
+  font-size: 24px;
+  font-weight: 400;
+}

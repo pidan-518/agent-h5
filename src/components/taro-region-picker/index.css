@@ -1,0 +1,36 @@
+.taro-region-picker {
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    text-align:left;
+    font-size: 28px;
+    padding: 0 10px;
+    /* border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999; */
+}
+
+.taro-region-picker-gray {
+    color: #999999;
+}
+
+.taro-region-picker-black {
+    color: #999999;
+}
+.taro-region-picker .taro-text{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box
+}
+.weui-picker__bd{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.downImg {
+    top: 50%;
+    width: 36px;
+    height: 16px;
+    right: 50px;
+    position: absolute;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,324 @@
+@import '../../common/globalstyle.less';
+
+#financialRecord {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+
+  #content {
+    width: 100%;
+    height: 100%;
+
+    .topMask {
+      width: 750px;
+      height: 100%;
+      position: fixed;
+      background-color: #444343;
+      opacity: 0.5;
+      z-index: 99;
+      overflow: hidden;
+    }
+
+    .topControl,
+    .topHide {
+      width: 100%;
+      height: 278px;
+      background-color: #474747;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      transition: transform ease 500ms;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+
+      // 搜索栏
+      .searchbar {
+        width: 100%;
+        height: 108px;
+        // 清除外边距合并
+        overflow: hidden;
+
+        .form-body {
+          width: 720px;
+          height: 108px;
+          margin: 0px auto;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-around;
+
+          .search-condition {
+            width: 200px;
+            height: 62px;
+            color: #757575;
+            border: 1.1px #808080 solid;
+            margin-right: 2px;
+            background-color: #fff;
+            // 覆盖globalstyle.less的button样式
+            margin-left: 0;
+            vertical-align: middle;
+            font-size: 23px;
+            box-sizing: border-box;
+            border-radius: 32px;
+            text-align: center;
+          }
+
+          // 设置Picker的样式
+          .item-select {
+            // 取消原生下拉框箭头
+            // appearance: none;
+            padding-right: 30px;
+
+            .item-select-view {
+              line-height: 62px;
+              vertical-align: middle;
+              /*在选择框的最右侧中间显示小箭头图片*/
+              background: url('../../static/common/dropDown.png') no-repeat scroll 100% transparent;
+              background-size: 28px 14px;
+              border-radius: 32px;
+              text-align: center;
+            }
+          }
+
+          input {
+            padding-left: 0;
+          }
+          // 提示文字居中
+          input::-ms-input-placeholder {
+            text-align: center;
+          }
+          input::-webkit-input-placeholder {
+            text-align: center;
+          }
+
+          #search-btn {
+            border: none;
+            padding: 0;
+            width: 62px;
+            height: 62px;
+            background-color: #e71616;
+            border: 1px solid #e71616;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+
+            img {
+              width: 34px;
+              height: 34px;
+              vertical-align: middle;
+              margin: 11px 0 0 0;
+            }
+
+            span {
+              font-size: 28px;
+              line-height: 62px;
+            }
+          }
+        }
+      }
+
+      // 选项组
+      .options {
+        width: 720px;
+        height: 120px;
+        margin: 0 auto;
+
+        .button-item {
+          font-size: 24px;
+          color: #fff;
+          display: inline-block;
+
+          .button-box {
+            width: 86px;
+            height: 86px;
+            margin: 0px auto 0;
+            border-radius: 50%;
+            border: none;
+            padding: 0;
+
+            .button-img {
+              width: 86px;
+              height: 86px;
+            }
+          }
+
+          &:nth-child(1) {
+            margin-left: 215px;
+          }
+
+          &:nth-child(2) {
+            margin-left: 80px;
+          }
+        }
+      }
+
+      // 弹出按钮
+      .popBtnView {
+        width: 100%;
+        height: 50px;
+        padding-top: 8px;
+        text-align: center;
+        position: relative;
+
+        .tip {
+          display: block;
+          width: 100%;
+          height: 26px;
+          line-height: 26px;
+          color: #fff;
+          font-size: 20px;
+          transform: scale(0.9);
+          position: absolute;
+          top: 0;
+        }
+
+        .popBtn-open {
+          width: 16px;
+          height: 10px;
+          transform: rotate(0deg);
+          transition: transform 500ms ease;
+        }
+
+        .popBtn-close {
+          width: 16px;
+          height: 10px;
+          transform: rotate(180deg);
+          transition: transform 500ms ease;
+        }
+      }
+    }
+
+    .topHide {
+      transform: translateY(-228px);
+    }
+
+    .nonetransition {
+      transition: none !important;
+    }
+
+    .tabs-header {
+      width: 100%;
+      height: 90px;
+      text-align: center;
+
+      #tabs0,
+      #tabs1 {
+        display: inline-block;
+        width: 374px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 26px;
+        padding: 0;
+        background-color: #fff;
+      }
+
+      .tabs-active {
+        background-color: #454545 !important;
+        color: #fff !important;
+      }
+    }
+
+    // 内容
+    .tabs-content {
+      width: 750px;
+      padding-top: 52px;
+
+      .tab {
+        height: 0;
+        overflow: hidden;
+      }
+
+      .tab-active {
+        height: 100%;
+      }
+    }
+
+    // 申请列表
+    .application-list {
+      width: 100%;
+      height: auto;
+
+      .data-item {
+        width: 714px;
+        height: 212px;
+        margin: 8px auto 0;
+        box-sizing: border-box;
+        padding: 0 44px 0 18px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 14px;
+
+        // 头像及头衔
+        .avatars {
+          width: 134px;
+          height: 100%;
+
+          .avatar {
+            width: 134px;
+            height: 134px;
+            margin: 16px auto 0;
+            display: block;
+            // background-color: #3195e1;
+          }
+
+          .rank {
+            width: 134px;
+            height: 42px;
+            line-height: 42px;
+            background-color: #d6a886;
+            color: #6f411c;
+            text-align: center;
+            font-weight: 400;
+            margin: 6px auto;
+            border-radius: 4px;
+            font-size: 24px;
+          }
+        }
+
+        // 个人信息
+        .informations {
+          // width: 450px;
+          height: 100%;
+          font-size: 24px;
+          box-sizing: border-box;
+          padding-top: 22px;
+
+          p {
+            line-height: 31px;
+            margin-top: 13px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+
+        // 详细信息按钮
+        .detail-btn {
+          width: 14px;
+          height: 24px;
+          margin-top: 94px;
+
+          .toIcon {
+            display: block;
+            width: 14px;
+            height: 24px;
+          }
+        }
+      }
+
+      // 底部小提示
+      .bottomTip {
+        display: inline-block;
+        width: 100%;
+        color: #999;
+        line-height: 88px;
+        text-align: center;
+        font-size: 24px;
+      }
+    }
+  }
+}

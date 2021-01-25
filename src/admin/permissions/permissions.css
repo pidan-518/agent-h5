@@ -1,0 +1,350 @@
+input {
+  display: inline-block;
+  height: 24px;
+  text-align: center;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.h5-permissions .permissions-function {
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px;
+}
+.h5-permissions .permissions-function .function-list {
+  flex: 1;
+  width: 100vw;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.h5-permissions .permissions-function .function-list .image1 {
+  width: 80px;
+  height: 80px;
+  background-color: #3575BF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .permissions-function .function-list .image1 img {
+  width: 46px;
+  height: 45px;
+}
+.h5-permissions .permissions-function .function-list .image2 {
+  width: 80px;
+  height: 80px;
+  background-color: #BF7A35;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .permissions-function .function-list .image2 img {
+  width: 46px;
+  height: 45px;
+}
+.h5-permissions .permissions-function .function-list .image3 {
+  width: 80px;
+  height: 80px;
+  background-color: #3A35BF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .permissions-function .function-list .image3 img {
+  width: 46px;
+  height: 45px;
+}
+.h5-permissions .permissions-function .function-list .content {
+  display: block;
+  margin-top: 5px;
+  font-size: 24px;
+}
+.h5-permissions .guanliyuan {
+  margin-top: 4px;
+  width: 100vw;
+}
+.h5-permissions .guanliyuan .guanliyuanTop {
+  background: #ffffff;
+  height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent1 .contentStyle {
+  width: 521px;
+  height: 62px;
+  border: 1px solid #808080;
+  opacity: 1;
+  border-radius: 4px;
+  line-height: 62px;
+  text-align: center;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent1 .contentStyle .item {
+  width: 521px;
+  height: 62px;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent1 .contentStyle .item .item-select {
+  font-size: 24px;
+  text-align: center;
+  display: inline-block;
+  flex: 1;
+  width: fit-content;
+  min-width: 521px;
+  color: #333;
+  appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url('../../static/common/dropDown.png') no-repeat scroll 100% transparent;
+  background-size: 38px 14px;
+  background-position-x: 95%;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent2 {
+  display: flex;
+  justify-content: space-between;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent2 .contentStyle {
+  width: 521px;
+  height: 62px;
+  border: 1px solid #808080;
+  opacity: 1;
+  border-radius: 4px;
+  line-height: 62px;
+  text-align: center;
+  margin-top: 8px;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent2 .contentStyle input {
+  color: #333;
+  font-size: 24px;
+  height: 62px;
+  line-height: 62px;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent2 .topBtn {
+  width: 177px;
+  height: 62px;
+  background: #c71e1e;
+  border-radius: 4px;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 62px;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent2 .topBtn img {
+  width: 38px;
+  height: 38px;
+  vertical-align: -3px;
+  margin-right: 4px;
+}
+.h5-permissions .guanliyuan .guanliyuanTop .topContent2 .topBtn .btnText {
+  color: #fff;
+  width: 56px;
+  height: 37px;
+  font-size: 28px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  line-height: 37px;
+}
+.h5-permissions .guanliyuan .guanliyuanTab {
+  background: #ffffff;
+  margin-top: 4px;
+}
+.h5-permissions .guanliyuan .guanliyuanTab .tabList {
+  width: 100vw;
+  height: 98px;
+  display: flex;
+}
+.h5-permissions .guanliyuan .guanliyuanTab .tabList .listItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .guanliyuan .guanliyuanTab .tabList .listItem .itemText {
+  font-size: 28px;
+  font-weight: 400;
+}
+.h5-permissions .guanliyuan .guanliyuanContent {
+  background-color: #fff;
+  margin-top: 4px;
+}
+.h5-permissions .guanliyuan .guanliyuanContent .contentList {
+  width: 100vw;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .guanliyuan .guanliyuanContent .contentList .listItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+.h5-permissions .guanliyuan .guanliyuanContent .contentList .listItem .removeThis {
+  width: 43px;
+  height: 43px;
+  margin-right: 18px;
+  margin-top: 3px;
+  background-image: url("../../static/common/delete.png");
+  background-repeat: no-repeat;
+  background-size: 43px 43px;
+  border: none;
+  padding: 0px !important;
+}
+.h5-permissions .guanliyuan .guanliyuanContent .contentList .listItem .edit {
+  width: 36px;
+  height: 36px;
+  margin-left: 18px;
+  margin-top: 3px;
+  background-image: url("../../static/common/comment.png");
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  border: none;
+  padding: 0px !important;
+}
+.h5-permissions .role {
+  width: 100vw;
+}
+.h5-permissions .role .roleTab {
+  background: #ffffff;
+  margin-top: 4px;
+}
+.h5-permissions .role .roleTab .tabList {
+  width: 100vw;
+  height: 98px;
+  display: flex;
+}
+.h5-permissions .role .roleTab .tabList .listItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .role .roleTab .tabList .listItem .itemText {
+  font-size: 28px;
+  font-weight: 400;
+}
+.h5-permissions .role .roleContent {
+  background-color: #fff;
+  margin-top: 4px;
+}
+.h5-permissions .role .roleContent .contentList {
+  width: 100vw;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h5-permissions .role .roleContent .contentList .listItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+.h5-permissions .role .roleContent .contentList .listItem .removeThis {
+  width: 43px;
+  height: 43px;
+  margin-right: 22px;
+  margin-top: 3px;
+  background-image: url("../../static/common/delete.png");
+  background-repeat: no-repeat;
+  background-size: 43px 43px;
+  border: none;
+}
+.h5-permissions .role .roleContent .contentList .listItem .edit {
+  width: 36px;
+  height: 36px;
+  margin-left: 22px;
+  margin-top: 3px;
+  background-image: url("../../static/common/comment.png");
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  border: none;
+}
+.h5-permissions .role .roleContent .contentList .listItem /deep/ .at-button {
+  padding: 0;
+}
+.h5-permissions .addContent .addModal .at-modal__container {
+  height: 383px;
+}
+.h5-permissions .addContent .addModal .at-modal__container .addModalBtn {
+  height: 100%;
+}
+.h5-permissions .addContent .addModal .at-modal__container .addModalBtn .at-modal__action {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h5-permissions .addContent .addModal .at-modal__container .addModalBtn .at-modal__action .btnGuanliyuan {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.h5-permissions .addContent .addModal .at-modal__container .addModalBtn .at-modal__action .btnGuanliyuan img {
+  width: 120px;
+  height: 120px;
+}
+.h5-permissions .addContent .addModal .at-modal__container .addModalBtn .at-modal__action .btnRole {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
+.h5-permissions .addContent .addModal .at-modal__container .addModalBtn .at-modal__action .btnRole img {
+  width: 120px;
+  height: 120px;
+}
+.h5-permissions .addModalContent {
+  width: 100%;
+  position: absolute;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: center;
+}
+.h5-permissions .addModalContent .text1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 14%;
+}
+.h5-permissions .addModalContent .text2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 13%;
+}
+.at-modal__container {
+  width: 560.1px;
+  border-radius: 0;
+}
+.at-modal__container .at-modal__content {
+  height: 278px;
+  min-height: 278px;
+  font-size: 27px;
+  box-sizing: border-box;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+.at-modal__container .at-modal__content .modal-text {
+  height: 278px;
+  color: #030303;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

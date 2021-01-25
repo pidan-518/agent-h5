@@ -1,0 +1,139 @@
+@import '../../common/globalstyle.less';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  // position: relative;
+
+  #addEquity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+
+    #content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .items {
+        width: 750px;
+
+        .item {
+          width: 750px;
+          height: 98px;
+          line-height: 98px;
+          margin-top: 4px;
+          padding-left: 54px;
+          // padding-right: 36px;
+          background-color: #fff;
+          display: flex;
+          flex-direction: row;
+
+          // taro的picker组件会自己生成一个div包裹组件
+          // 所以需要将这个div重设样式
+          & > div {
+            &:first-child {
+              display: flex;
+              // background-color: red;
+            }
+            width: 100%;
+          }
+
+          .item-title {
+            min-width: 140px;
+            color: #4F4F4F;
+          }
+
+          .item-input {
+            flex: 1;
+            border: none;
+            padding-left: 30px;
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+              color: #A4A4A4;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */  
+              color: #A4A4A4;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */ 
+             color: #A4A4A4;
+            }
+            &:-moz-placeholder { /* Firefox 18- */ 
+             color: #A4A4A4;
+            }
+          }
+
+          .item-select, .item-select-init {
+            display: inline-block;
+            color: #A4A4A4;
+            flex: 1;
+            width: fit-content;
+            min-width: 450px;
+            padding-left: 30px;
+            padding-right: 38px;
+            margin-right: 36px;
+            // 取消原生下拉框箭头
+            appearance: none;
+            /*在选择框的最右侧中间显示小箭头图片*/
+            background: url('../../static/common/dropDown.png') no-repeat scroll 97% transparent;
+            background-size: 25px 15px;
+          }
+
+          .item-select{
+            color: #000;
+          }
+
+          .vcode-btn{
+            display: inline-block;
+            width: 218px;
+            height: 70px;
+            text-align: center;
+            color: #A4A4A4;
+            border-left: 2px solid #A4A4A4;
+            line-height: 70px;
+            margin-top: 14px;
+            font-size: 28px;
+          }
+
+          .vcode-btn-hide{
+            display: inline-block;
+            width: 218px;
+            height: 70px;
+            text-align: center;
+            border-left: 2px solid #A4A4A4;
+            line-height: 70px;
+            margin-top: 14px;
+            font-size: 28px;
+            color: #A4A4A4;
+          }
+        }
+      }
+
+      // 按钮
+      .btn-box {
+        width: 660px;
+        height: 84px;
+        background: #D6A886;
+        opacity: 1;
+        border-radius: 42px;
+        margin: 0 auto 35px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 46px;
+
+        .btn-text {
+          color: #6F411C;
+          line-height: 84px;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

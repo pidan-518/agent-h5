@@ -1,0 +1,41 @@
+@import '../../common/globalstyle.less';
+.examineDetail{
+    height: 100vh;
+    padding: 38px 31px 61px 31px;
+    background: #ffffff;
+    .content{
+        padding-bottom: 652px;
+        // line-height: 32px;
+        .applyContent{
+            padding-bottom: 100px;
+            .applyItemTile{
+                font-size: 28px;
+                color: #0E0E0E;
+                font-weight: bold;
+            }
+            .applyItem{
+                :first-of-type{
+                    width: 116px;
+                    display: inline-block;
+                    text-align: justify;
+                    text-align-last: justify; 
+                }
+                :nth-child(2){
+                    padding-right: 10px;
+                }
+            }
+        }
+        .applicant{
+          .applicantItemTitle{
+            font-size: 28px;
+            color: #4F4F4F;
+            font-weight: bold;
+          } 
+          .applicantItem{
+            :nth-child(2){
+                padding-right: 10px;
+            }
+        } 
+        }
+    }
+}

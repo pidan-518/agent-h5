@@ -1,0 +1,433 @@
+input {
+  display: inline-block;
+  height: 24px;
+  text-align: center;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.h5-permissions {
+  .permissions-function {
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    border-radius: 4px;
+
+    .function-list {
+      flex: 1;
+      width: 100vw;
+      height: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .image1 {
+        width: 80px;
+        height: 80px;
+        background-color: #3575BF;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 46px;
+          height: 45px;
+        }
+      }
+
+      .image2 {
+        width: 80px;
+        height: 80px;
+        background-color: #BF7A35;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 46px;
+          height: 45px;
+        }
+      }
+
+      .image3 {
+        width: 80px;
+        height: 80px;
+        background-color: #3A35BF;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 46px;
+          height: 45px;
+        }
+      }
+
+      .content {
+        display: block;
+        margin-top: 5px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .guanliyuan {
+    margin-top: 4px;
+    width: 100vw;
+
+    .guanliyuanTop {
+      background: rgb(255, 255, 255);
+      height: 182px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+
+      .topContent1 {
+        .contentStyle {
+          width: 521px;
+          height: 62px;
+          border: 1px solid rgba(128, 128, 128, 1);
+          opacity: 1;
+          border-radius: 4px;
+          line-height: 62px;
+          text-align: center;
+
+          .item {
+            width: 521px;
+            height: 62px;
+
+            .item-select {
+              font-size: 24px;
+              text-align: center;
+              display: inline-block;
+              flex: 1;
+              width: fit-content;
+              min-width: 521px;
+              color: #333;
+              // 取消原生下拉框箭头
+              appearance: none;
+              /*在选择框的最右侧中间显示小箭头图片*/
+              background: url('../../static/common/dropDown.png') no-repeat scroll 100% transparent;
+              background-size: 38px 14px;
+              background-position-x: 95%;
+            }
+          }
+        }
+      }
+
+      .topContent2 {
+        display: flex;
+        justify-content: space-between;
+
+        .contentStyle {
+          width: 521px;
+          height: 62px;
+          border: 1px solid rgba(128, 128, 128, 1);
+          opacity: 1;
+          border-radius: 4px;
+          line-height: 62px;
+          text-align: center;
+          margin-top: 8px;
+
+          input {
+            color: #333;
+            font-size: 24px;
+            height: 62px;
+            line-height: 62px;
+          }
+        }
+
+        .topBtn {
+          width: 177px;
+          height: 62px;
+          background: rgb(199, 30, 30);
+          border-radius: 4px;
+          margin-top: 8px;
+          text-align: center;
+          line-height: 62px;
+
+          img {
+            width: 38px;
+            height: 38px;
+            vertical-align: -3px;
+            margin-right: 4px;
+          }
+
+          .btnText {
+            color: #fff;
+            width: 56px;
+            height: 37px;
+            font-size: 28px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            line-height: 37px;
+          }
+        }
+      }
+    }
+
+    .guanliyuanTab {
+      background: rgb(255, 255, 255);
+      margin-top: 4px;
+
+      .tabList {
+        width: 100vw;
+        height: 98px;
+        display: flex;
+
+        .listItem {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .itemText {
+            font-size: 28px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .guanliyuanContent {
+      background-color: #fff;
+      margin-top: 4px;
+
+      .contentList {
+        width: 100vw;
+        height: 98px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .listItem {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 400;
+
+          .userName {}
+
+          .userRole {}
+
+          .userPhone {}
+
+          .removeThis {
+            width: 43px;
+            height: 43px;
+            margin-right: 18px;
+            margin-top: 3px;
+            background-image: url("../../static/common/delete.png");
+            background-repeat: no-repeat;
+            background-size: 43px 43px;
+            border: none;
+            padding: 0px !important;
+          }
+
+          .edit {
+            width: 36px;
+            height: 36px;
+            margin-left: 18px;
+            margin-top: 3px;
+            background-image: url("../../static/common/comment.png");
+            background-repeat: no-repeat;
+            background-size: 36px 36px;
+            border: none;
+            padding: 0px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .role {
+    width: 100vw;
+
+    .roleTab {
+      background: rgb(255, 255, 255);
+      margin-top: 4px;
+
+      .tabList {
+        width: 100vw;
+        height: 98px;
+        display: flex;
+
+        .listItem {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .itemText {
+            font-size: 28px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .roleContent {
+      background-color: #fff;
+      margin-top: 4px;
+
+      .contentList {
+        width: 100vw;
+        height: 98px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .listItem {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 400;
+
+          .userName {}
+
+          .userRole {}
+
+          .userPhone {}
+
+          .removeThis {
+            width: 43px;
+            height: 43px;
+            margin-right: 22px;
+            margin-top: 3px;
+            background-image: url("../../static/common/delete.png");
+            background-repeat: no-repeat;
+            background-size: 43px 43px;
+            border: none;
+            // padding: 0 !important;
+            // padding: 0 ;
+          }
+
+          .edit {
+            width: 36px;
+            height: 36px;
+            margin-left: 22px;
+            margin-top: 3px;
+            background-image: url("../../static/common/comment.png");
+            background-repeat: no-repeat;
+            background-size: 36px 36px;
+            border: none;
+          }
+
+          /deep/ .at-button {
+            padding: 0;
+          }
+
+          // .at-button--normal{
+          //   padding: 0 !important;
+          // }
+        }
+      }
+    }
+  }
+
+  .addContent {
+    .addModal {
+      .at-modal__container {
+        height: 383px;
+
+        .addModalBtn {
+          height: 100%;
+
+          .at-modal__action {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btnGuanliyuan {
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              margin-left: 80px;
+              margin-bottom: 50px;
+
+              img {
+                width: 120px;
+                height: 120px;
+              }
+            }
+
+            .btnRole {
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              margin-right: 80px;
+              margin-bottom: 50px;
+              img {
+                width: 120px;
+                height: 120px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+        .addModalContent {
+          width: 100%;
+          position: absolute;
+          transform: translate(0, -50%);
+          display: flex;
+          justify-content: center;
+          .text1 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-left: 14%;
+          }
+          .text2 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-right: 13%;
+          }
+        }
+      }
+
+    
+
+  .at-modal__container {
+    width: 560.1px;
+    border-radius: 0;
+
+    .at-modal__content {
+      height: 278px;
+      // 必须覆盖原来的样式
+      min-height: 278px;
+      font-size: 27px;
+      // 优化
+      box-sizing: border-box;
+      padding: 0 !important;
+      display: flex;
+      justify-content: center;
+
+      // 级别删除模态框
+      .modal-text {
+        height: 278px;
+        color: #030303;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }

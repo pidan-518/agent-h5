@@ -1,0 +1,51 @@
+#OptionModal .at-modal__container {
+  width: 560.1px;
+  border-radius: 0;
+}
+#OptionModal .at-modal__container .at-modal__content {
+  height: 278px;
+  min-height: 278px;
+  font-size: 27px;
+  box-sizing: border-box;
+  padding: 70px 94px 0 72px;
+}
+#OptionModal .at-modal__container .at-modal__content .modal-text {
+  height: 278px;
+  color: #030303;
+}
+#OptionModal .at-modal__container .at-modal__content .modal-box {
+  font-size: 27px;
+  width: 100%;
+  height: auto;
+  color: #030303;
+  margin-top: 29px;
+}
+#OptionModal .at-modal__container .at-modal__content .modal-box span {
+  float: left;
+  margin-top: 20px;
+}
+#OptionModal .at-modal__container .at-modal__content .modal-box .level-input {
+  width: 227.27px;
+  float: left;
+  border: none;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 74px;
+  border-bottom: 1px solid #a2a2a2;
+  text-align: center;
+}
+#OptionModal .at-modal__container .at-modal__footer {
+  height: 104px;
+}
+#OptionModal .at-modal__container .at-modal__footer .at-modal__action {
+  height: 104px;
+}
+#OptionModal .at-modal__container .at-modal__footer .at-modal__action button {
+  width: 50%;
+  min-width: 50%;
+  height: 100%;
+  font-size: 33px;
+  line-height: 104px;
+  color: #030303;
+}

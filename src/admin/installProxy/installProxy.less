@@ -1,0 +1,252 @@
+.h5-installProxy {
+  width: 100vw;
+  height: 100vh;
+
+  .installProxy {
+    width: 100vw;
+
+    .installProxy-levelName {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      .levelName-title {
+        flex: 1;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      .levelName-content {
+        flex: 3;
+        font-size: 28px;
+      }
+    }
+
+    .installProxy-level {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      text {
+        flex: 1;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      input {
+        flex: 3;
+        font-size: 28px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #666;
+
+      }
+    }
+
+    .installProxy-upgrade-cost {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      text {
+        flex: 1;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      input {
+        flex: 3;
+        font-size: 28px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #666;
+
+      }
+    }
+
+    .installProxy-upgrade-firstNum {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      text {
+        flex: 1;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      input {
+        flex: 1;
+        font-size: 28px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #666;
+
+      }
+    }
+
+    .installProxy-upgrade-teamNum {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      text {
+        flex: 2;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      input {
+        flex: 3;
+        font-size: 28px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #666;
+
+      }
+    }
+
+    .installProxy-upgrade-monthTurnover {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      text {
+        flex: 4;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      input {
+        flex: 5;
+        font-size: 28px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #666;
+
+      }
+    }
+
+    .installProxy-upgrade-continuousMonth {
+      background-color: #fff;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      text {
+        flex: 8;
+        margin-left: 52px;
+        font-size: 28px;
+      }
+
+      input {
+        flex: 9;
+        font-size: 28px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #666;
+
+      }
+    }
+
+    .item {
+      width: 100vw;
+      height: 98px;
+      line-height: 98px;
+      margin-top: 4px;
+      padding-left: 54px;
+      // padding-right: 36px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+
+      // taro的picker组件会自己生成一个div包裹组件
+      // 所以需要将这个div重设样式
+      &>div {
+        &:first-child {
+          display: flex;
+          // background-color: red;
+        }
+
+        width: 100%;
+
+      }
+
+
+      .item-title {
+        min-width: 140px;
+      }
+
+      .item-input {
+        flex: 1;
+        border: none;
+        padding-left: 30px;
+      }
+
+      .item-select {
+        display: inline-block;
+        // float: right;
+        flex: 1;
+        width: fit-content;
+        min-width: 450px;
+        padding-left: 30px;
+        padding-right: 38px;
+        margin-right: 36px;
+        color: #666;
+        // 取消原生下拉框箭头
+        appearance: none;
+        /*在选择框的最右侧中间显示小箭头图片*/
+        background: url('../../static/common/dropDown.png') no-repeat scroll 100% transparent;
+        background-size: 38px 14px;
+      }
+    }
+
+    // 深度选择器
+    /deep/ .weui-check {
+      left: 0;
+      position: static;
+    }
+  }
+
+}
+
+.installProxy-btn {
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .btn {
+    width: 660px;
+    height: 85px;
+    background-color: #D6A886;
+    color: #fff;
+    display: inline-block;
+    border-radius: 42px;
+    text-align: center;
+    line-height: 85px;
+    font-size: 32px;
+
+    .btn-content {}
+  }
+}

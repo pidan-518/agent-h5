@@ -1,0 +1,74 @@
+.h5-team-userInformation .team-userInformation-list {
+  background-color: #fff;
+  width: 100vw;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item {
+  background-color: #fff;
+  width: 95%;
+  margin: 8px auto;
+  height: 225px;
+  opacity: 1;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  border-radius: 16px;
+  /* 详情按钮 */
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-left {
+  flex: 1;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-left .left-content {
+  display: flex;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-left .left-content img.left-content-image {
+  margin-left: 42px;
+  margin-top: 22px;
+  width: 122px;
+  height: 122px;
+  opacity: 1;
+  border-radius: 4px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-left .left-content text.left-content-text {
+  position: absolute;
+  top: 156px;
+  margin-left: 42px;
+  display: inline-block;
+  font-size: 24px;
+  color: #6F411C;
+  text-align: center;
+  line-height: 42px;
+  width: 122px;
+  height: 42px;
+  background: #D6A886;
+  opacity: 1;
+  border-radius: 4px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-right {
+  flex: 4;
+  display: flex;
+  margin-left: 48px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-right .right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-right .right-content .right-content-username {
+  font-size: 24px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-right .right-content .right-content-region {
+  font-size: 24px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-right .right-content .right-content-upgrade {
+  font-size: 24px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .userInformation-list-item-right .right-content .right-content-ordermoney {
+  font-size: 23px;
+}
+.h5-team-userInformation .team-userInformation-list .userInformation-list-item .detail {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}

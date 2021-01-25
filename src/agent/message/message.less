@@ -1,0 +1,44 @@
+.message{
+  min-height: 100vh;
+  background: #F5F5F5;
+  /deep/ .at-modal__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item{
+    background: #FFFFFF;
+    width:750px;
+    height:116px;
+    box-sizing: border-box;
+    padding: 0 36px 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight:400;
+    margin-bottom: 2px;
+    &.on{
+      background: #DDDDDD;
+      color: #4F4F4F;
+    }
+    .text{
+      flex: 1;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .time{
+      color: #707070;
+      min-width: 130px;
+      font-size: 24px;
+      text-align: right;
+    }
+  }
+  .no-more{
+    text-align: center;
+    padding: 20px ;
+    color: #666;
+    font-size: 24px;
+  }
+}

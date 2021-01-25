@@ -1,0 +1,75 @@
+@import '../../common/globalstyle.less';
+.investmentposter{
+    // overflow:hidden;
+    // position: fixed;
+    // top:0px;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    background: #ffffff;
+    // height: 100vh; 
+    width: auto; 
+    .at-modal__container{
+        width:700px;
+        height: 850px;
+        .at-modal__content{
+            width:650px;
+            height: 700px;
+            .imagecode{   
+                 #cutimage{
+                    width:600px;
+                    height: 700px;
+                     .img{
+                        width:600px;
+                        height: 700px;
+                     }
+                 }
+             }
+        } 
+    } 
+    .content{
+        display:flex;
+        justify-content: center;
+        height: 82%;
+        top: 0;
+        // border: 1px solid #E76692;
+        z-index: 90;
+        .imgcover{   
+            // max-height:1250px;
+            //  height:100%;
+            z-index: 100;
+        }
+	}
+		
+    .bottom{
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    .uploadcorde{   
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F2F2F2;
+        border:1px solid #707070;
+        border-radius: 12px;
+        .code{
+            margin: 0 auto;
+            width: 73px;
+            height: 73px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+    .share{   
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;       
+    }
+}
+}

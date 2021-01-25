@@ -1,0 +1,140 @@
+@import "../../common/global.less";
+
+#lecturer {
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 22;
+    .setSize(100%, 100%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .more {
+    text-align: center;
+    height: 48px;
+    background-color: #474747;
+    border-radius: 0px 0px 20px 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1;
+
+    .image {
+      /* position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0; */
+      text-align: center;
+      height: 16px;
+
+      .top-image {
+        .setSize(18px, 16px);
+      }
+    }
+  }
+
+  .menu-list {
+    position: fixed;
+    z-index: 23;
+    top: -234px;
+    left: 0;
+    right: 0;
+    background-color: #474747;
+    display: flex;
+    padding: 36px 0px 61px;
+    transition: top 0.2s ease-in;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+
+    .menu-item {
+      flex: 1;
+      text-align: center;
+
+      .item-img {
+        .setSize(80px, 80px);
+      }
+    }
+
+    .top-image {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      .setSize(18px, 16px);
+      margin: 0 auto;
+      transform: rotateY(360deg);
+    }
+  }
+
+  .menu-list-ac {
+    &:extend(#lecturer .menu-list);
+    top: 0;
+  }
+
+  #lecturer-list {
+    padding: 62px 28px 14px;
+    .setGrid(2, auto-fill, 340px, 434px);
+
+    .lecturer-item {
+      .setSize(340px, 434px);
+      border-radius: 8px;
+      position: relative;
+
+      .lecturer-item-img {
+        .setSize(100%, 100%);
+        border-radius: 8px;
+      }
+
+      .lecturer-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        height: 180px;
+        padding: 0px 14px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0px 0px 8px 8px;
+
+        .left-box {
+          width: 230px;
+
+          .lecturer-name {
+            font-size: 36px;
+            font-weight: 700;
+            color: #4f4f4f;
+            .setFonthidden(1);
+          }
+
+          .lecturer-details {
+            font-size: 24px;
+            color: #474747;
+            .setFonthidden(3);
+          }
+        }
+
+        .right-box {
+          padding-top: 62px;
+          width: 80px;
+
+          .details-btn {
+            .setSize(81px, 81px);
+            background-color: #e71616;
+            color: #fff;
+            border-radius: 50%;
+            line-height: 80px;
+            text-align: center;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

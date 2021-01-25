@@ -1,0 +1,37 @@
+.h5-agentInstall {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+.h5-agentInstall .agentInstall-function .function-list {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.h5-agentInstall .agentInstall-function .function-list .function-list-item {
+  margin-top: 20px;
+  width: 33.33%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h5-agentInstall .agentInstall-function .function-list .function-list-item .item-expert {
+  width: 80px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.h5-agentInstall .agentInstall-function .function-list .function-list-item .item-expert img {
+  width: 80px;
+  height: 79px;
+}
+.h5-agentInstall .agentInstall-function .function-list .function-list-item text {
+  margin-top: 5px;
+  font-size: 24px;
+}

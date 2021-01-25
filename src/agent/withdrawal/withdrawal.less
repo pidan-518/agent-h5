@@ -1,0 +1,67 @@
+
+.withdrawal{
+  min-height: 100vh;
+  background: #F5F5F5;
+  .item{
+    width:750px;
+    height:98px;
+    background:rgba(255,255,255,1);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    padding: 0 30px 0 32px;
+    box-sizing: border-box;
+    .text{
+      min-width: 140px;
+      margin-right: 26px;
+    }
+    .inp{
+      flex: 1;
+      border: none !important;
+    }
+    ::-webkit-input-placeholder{
+      color: #A4A4A4;
+    }
+    .more{
+      width: 34px;
+      height: 34px;
+      background: url('../../static/agentPart/ic_return.png') no-repeat center;
+      background-size: contain;
+    }
+    .code{
+      width: 168px;
+      min-width: 168px;
+      position: relative;
+      width: 152px;
+      line-height: 52px;
+      text-align: center;
+      background: #D6A886;
+      opacity: 1;
+      color: #6F411C;
+      border-radius: 26px;
+      font-size: 24px;
+      &::before{
+        content: '';
+        display: inline-block;
+        width:2px;
+        height:70px;
+        background: #A4A4A4;
+        position: absolute;
+        left: -28px;
+        top: -10px;
+      }
+    }
+    .price{
+      font-size: 24px;
+    }
+  }
+  .button{
+    margin-top: 230px;
+    text-align: center;
+    .submit{
+      width: 578px;
+      height: 72px;
+    }
+  }
+}
